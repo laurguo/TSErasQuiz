@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS Eras Quiz!</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<body class="wholepage">
+
+    <div class="page active" id="home">
+        <div class="title">
+            <h1 style="font-size: 70px;">Which Taylor Swift Era Are You??</h1>
+    
+            <button onclick="showPage('question1')" class="button-1" type="submit">
+                <h2>Find out now! &#128525</h2>
+            </button>
+            
+        </div>
+    </div>
+
+    <div class="page" id="question1">
+        <div class="question">
+            <h1>1. Which shade of blue is your favorite?</h1>
+
+            <button onclick="showPage('question2')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1)" class="answerbutton" id="A1">
+                    <img src="navy.jpg" alt="navy blue" width="100" height="100">
+                    <p>Navy Blue</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1)" class="answerbutton" id="B1">
+                    <img src="powder.png" alt="powder blue" width="100" height="100">
+                    <p>Powder Blue</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1)" class="answerbutton" id="C1">
+                    <img src="royal.png" alt="royal blue" width="100" height="100">
+                    <p>Royal Blue</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)" class="answerbutton" id="D1">
+                    <img src="sky.png" alt="sky blue" width="100" height="100">
+                    <p>Sky Blue</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question2">
+        <div class="question">
+            <h1>2. Where do you want to live in the future?</h1>
+            <button onclick="showPage('question3')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 2)" class="answerbutton" id="A2">
+                    <img src="majorcity.jpg" alt="major city" width="100" height="100">
+                    <p>Major City</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 2)" class="answerbutton" id="B2">
+                    <img src="smallcity.jpg" alt="small city" width="100" height="100">
+                    <p>Small City</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2)" class="answerbutton" id="C2">
+                    <img src="suburbs.jpg" alt="suburbs" width="100" height="100">
+                    <p>Suburbs</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 2)" class="answerbutton" id="D2">
+                    <img src="rural.jpg" alt="rural countryside" width="100" height="100">
+                    <p>Rural</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question3">
+        <div class="question">
+            <h1>3. Did you go to the Eras Tour?</h1>
+            <button onclick="showPage('question4')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 3)" class="answerbutton" id="A3">
+                    <img src="yeslove.webp" alt="really happy taylor" width="100" height="100">
+                    <p>Yess, I loved it!</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 3)" class="answerbutton" id="B3">
+                    <img src="likedit.jpg" alt="fearless hand heart" width="100" height="100">
+                    <p>Yeah it was fun</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 3)" class="answerbutton" id="C3">
+                    <img src="noiwish.jpg" alt="folklore sad moment" width="100" height="100">
+                    <p>No, but I wishh</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3)" class="answerbutton" id="D3">
+                    <img src="nah.webp" alt="taylor swift surprsied face" width="100" height="100">
+                    <p>Nah</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question4">
+        <div class="question">
+            <h1>4. What is your favorite season?</h1>
+            <button onclick="showPage('question5')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 4)" class="answerbutton" id="A4">
+                    <img src="spring.jpg" alt="flowers" width="100" height="100">
+                    <p>Spring</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4)" class="answerbutton" id="B4">
+                    <img src="summer.jpeg" alt="beach" width="100" height="100">
+                    <p>Summer</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 4)" class="answerbutton" id="C4">
+                    <img src="autumn.jpg" alt="cozy book nook" width="100" height="100">
+                    <p>Autumn</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 4)" class="answerbutton" id="D4">
+                    <img src="winter.jpg" alt="snowy street" width="100" height="100">
+                    <p>Winter</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question5">
+        <div class="question">
+            <h1>5. Which ice cream flavor is your favorite?</h1>
+            <button onclick="showPage('question6')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 5)" class="answerbutton" id="A5">
+                    <img src="espresso.jpg" alt="espresso ice cream" width="100" height="100">
+                    <p>Espresso</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 5)" class="answerbutton" id="B5">
+                    <img src="strawberry.jpg" alt="strawberry ice cream" width="100" height="100">
+                    <p>Strawberry</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 5)" class="answerbutton" id="C5">
+                    <img src="mintchip.jpg" alt="mint chip ice cream" width="100" height="100">
+                    <p>Mint Chocolate Chip</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5)" class="answerbutton" id="D5">
+                    <img src="oreo.jpg" alt="cookies and cream ice cream" width="100" height="100">
+                    <p>Cookies and Cream</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question6">
+        <div class="question">
+            <h1>6. Which classic novel do you vibe with the most?</h1>
+            <button onclick="showPage('question7')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 6)" class="answerbutton" id="A6">
+                    <img src="prideandprej.jpg" alt="movie poster for pride and prejudice (2005)" width="100" height="100">
+                    <p>Pride and Prejudice</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 6)" class="answerbutton" id="B6">
+                    <img src="candp.jpg" alt="crime and punishment book cover" width="100" height="100">
+                    <p>Crime and Punishment</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 6)" class="answerbutton" id="C6">
+                    <img src="greatgatsby.webp" alt="the great gatsby book cover" width="100" height="100">
+                    <p>The Great Gatsby</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 6)" class="answerbutton" id="D6">
+                    <img src="wuthheights.jpg" alt="wuthering heights book cover" width="100" height="100">
+                    <p>Wuthering Heights</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question7">
+        <div class="question">
+            <h1>7. What did you eat for breakfast?</h1>
+            <button onclick="showPage('question8')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 7)" class="answerbutton" id="A7">
+                    <img src="yogurt.jpg" alt="yummy yogurt bowl" width="100" height="100">
+                    <p>Yogurt/Smoothie Bowl</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 7)" class="answerbutton" id="B7">
+                    <img src="bagel.jpg" alt="smoked salmon and cream cheese bagel" width="100" height="100">
+                    <p>Toast/Bagel/Something savory</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 7)" class="answerbutton" id="C7">
+                    <img src="pancakes.jpg" alt="strawberry pancakes w/ syrup" width="100" height="100">
+                    <p>Waffle/Pancakes/Something sweet</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 7)" class="answerbutton" id="D7">
+                    <img src="nobrekky.jpg" alt="empty plate" width="100" height="100">
+                    <p>No breakfast :|</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question8">
+        <div class="question">
+            <h1>8. Your go to coffee order?</h1>
+            <button onclick="showPage('question9')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 8)" class="answerbutton" id="A8">
+                    <img src="americano.webp" alt="iced americano" width="100" height="100">
+                    <p>Americano</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 8)" class="answerbutton" id="B8">
+                    <img src="latte.avif" alt="hot vanilla latte" width="100" height="100">
+                    <p>Vanilla/Caramel Latte</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 8)" class="answerbutton" id="C8">
+                    <img src="frap.jpg" alt="twix frappuccino" width="100" height="100">
+                    <p>Frappuccino</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8)" class="answerbutton" id="D8">
+                    <img src="decaf.jpg" alt="nescaf decaf" width="100" height="100">
+                    <p>Has to Be Decaf</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question9">
+        <div class="question">
+            <h1>9. What's your spirit animal?</h1>
+            <button onclick="showPage('question10')" class="button-1" type="submit">
+                <h2>Next Question</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 9)" class="answerbutton" id="A9">
+                    <img src="pika.webp" alt="pika with grass in mouth" width="100" height="100">
+                    <p>Pika</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 9)" class="answerbutton" id="B9">
+                    <img src="bear.jpg" alt="brown bear" width="100" height="100">
+                    <p>Bear</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 9)" class="answerbutton" id="C9">
+                    <img src="owl.jpeg" alt="owl" width="100" height="100">
+                    <p>Owl</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 9)" class="answerbutton" id="D9">
+                    <img src="tiger.jpg" alt="tiger laying down" width="100" height="100">
+                    <p>Tiger</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="question10">
+        <div class="question">
+            <h1>10. Siblings?</h1>
+            <button onclick="showPage('results')" class="button-1" type="submit">
+                <h2>See Your Results!</h2>
+            </button>
+        </div>
+
+        <div class="answerchoices">
+            <div>
+                <button onclick="selectedA(0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 10)" class="answerbutton" id="A10">
+                    <img src="onlychild.jpg" alt="only child stick figure family" width="100" height="100">
+                    <p>Only Child</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedB(0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 10)" class="answerbutton" id="B10">
+                    <img src="oldestchild.webp" alt="two stick figures one is bigger" width="100" height="100">
+                    <p>I'm the Oldest</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedC(1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 10)" class="answerbutton" id="C10">
+                    <img src="baby.jpg" alt="swaddled baby" width="100" height="100">
+                    <p>The Baby of the Family</p>
+                </button>
+            </div>
+            <div>
+                <button onclick="selectedD(0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 10)" class="answerbutton" id="D10">
+                    <img src="middle.png" alt="three kids holding hands" width="100" height="100">
+                    <p>Twin/Middle Child</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="results">
+        <div class="question">
+            <h1>YOUR ERA IS...</h1>
+            <h1 id="eraresult" style="font-size: 70px;">tbd...</h1>
+        </div>
+    </div>
+</body>
+</html>
